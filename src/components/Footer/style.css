@@ -9,8 +9,23 @@
     font-size: 1.6em; */
 
 }
+.footer-mobile {
+    width: 100%;
+    background: #3e3735;
+    position: relative;
+    bottom: 0;
+ 
+    /* font-family: "Amatic SC", cursive;
+    font-size: 1.6em; */
+
+}
 .content-footer {
     color: #fff;
+}
+.content-footer-mobile {
+    color: #fff;
+    flex-direction: column;
+    padding: 20px 0px;
 }
 .divider {
     background: #fff;

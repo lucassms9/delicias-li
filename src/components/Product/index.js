@@ -26,7 +26,7 @@ const Product = ({product, chooseFlavor, buyItem}) => {
         )} 
         </div>
         <div style={{marginTop:'10px'}}>
-          <Button style={{height: '47px', lineHeight:'19px', fontSize:'25px', padding:'4px 24px'}} shape="round" type="primary" onClick={() => buyItem(product.id)}  >COMPRAR</Button>
+          <Button style={{height: '47px', lineHeight:'19px', fontSize:'25px', padding:'4px 24px'}} shape="round" type="primary" onClick={() => buyItem(product.id)}>COMPRAR</Button>
         </div>
         </div>
       </Card>

@@ -1,7 +1,9 @@
 import React from 'react'
 import Coverflow from 'react-coverflow'
 
-const contentStyle = {}
+const contentStyle = {
+    // width: '100%',
+}
 
 // import { Container } from './styles';
 
@@ -16,10 +18,21 @@ const CarouselComp = () => {
             classes={{ background: 'rgb(233, 23, 23)' }}
             className=""
             displayQuantityOfSide={2}
+            infiniteScroll
             navigation={false}
             enableScroll={true}
             clickable={true}
             active={0}
+            media={{
+                '@media (max-width: 900px)': {
+                  width: '100%',
+                  height: '250px'
+                },
+                '@media (min-width: 900px)': {
+                  width: '100%',
+                  height: '500px'
+                }
+              }}
         >
             <div
                 onClick={() => fn()}
