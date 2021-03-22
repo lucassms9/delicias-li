@@ -66,7 +66,7 @@ const Home = () => {
     const findFlavor = find.flavors.find(fla => fla.active)
     const text = `Olá, gostaria de comprar o *${find.name}* no sabor de *${findFlavor.flavor}*`;
 
-    window.open(`https://api.whatsapp.com/send/?phone=5515997880780&text=${text}&app_absent=0`, '_blank');
+    window.open(`https://api.whatsapp.com/send/?phone=5515997623307&text=${text}&app_absent=0`, '_blank');
 
     
   }
