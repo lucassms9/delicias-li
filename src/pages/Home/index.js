@@ -62,7 +62,6 @@ const Home = () => {
 
   const buyItem = (id) => {
     const find = produtcs.find(prod => prod.id === id)
-    console.log(find)
 
     const findFlavor = find.flavors.find(fla => fla.active)
     const text = `Olá, gostaria de comprar o *${find.name}* no sabor de *${findFlavor.flavor}*`;
@@ -87,8 +86,6 @@ const Home = () => {
     const items = [...handleItems, find];
  
     items.sort((a, b) => a.id - b.id);
-
-    console.log(produtcs)
     setProdutcs(items)
   }
     return (
