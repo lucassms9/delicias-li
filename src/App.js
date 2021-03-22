@@ -1,15 +1,14 @@
-import './App.less';
-import { Button } from 'antd';
+/* eslint-disable react/react-in-jsx-scope */
+import './App.less'
+import './App.css'
+import Routes from './Routes'
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          <Button type="primary">Button</Button>
-        </p>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+           <Routes/>
+        </div>
+    )
 }
 
-export default App;
+export default App

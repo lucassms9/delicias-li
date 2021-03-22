@@ -1,0 +1,15 @@
+.product-item {
+  font-family: "Amatic SC", cursive;
+  margin-right: 20px;
+  margin-top: 15px;
+}
+
+.body-card{
+  font-weight: 700;
+  font-size: 2em;
+  display: flex;
+  color: #fe6787;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

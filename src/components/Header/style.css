@@ -1,0 +1,31 @@
+.app-header {
+    height: 130px;
+    width: 100%;
+    background: #3e3735;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.content-header {
+    background: #fff;
+    width: 100%;
+    height: 80px;
+}
+.content-header::before {
+    width: 100%;
+    content: '';
+    background: url('http://sweet-dessert.axiomthemes.com/wp-content/themes/sweet-dessert/images/white_bd_top.png')
+        repeat-x;
+    height: 2em;
+    top: 41px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.menu-item {
+    padding-left: 40px;
+    padding-top: 30px;
+}
+.icon-menu:hover{
+  color: #fe6787;
+}

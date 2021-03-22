@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ant-design/icons": "^4.6.2",
     "@craco/craco": "^6.1.1",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -10,9 +11,11 @@
     "antd": "^4.14.0",
     "craco-less": "^1.17.1",
     "react": "^17.0.1",
+    "react-coverflow": "^0.2.20",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-simple-options-selector": "^1.0.3",
     "web-vitals": "^1.0.1"
   },
   "scripts": {

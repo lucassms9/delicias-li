@@ -1,0 +1,13 @@
+.container-carousel{
+  margin-top: 40px;
+}
+.contrainer-products{
+  margin:30px
+}
+.cl-prod{
+  display: flex;
+  justify-content: center;
+}
+.content-products{
+  justify-content: center;
+}
