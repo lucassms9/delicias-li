@@ -1,7 +1,17 @@
-.product-item {
-  font-family: "Amatic SC", cursive;
-  margin-right: 20px;
-  margin-top: 15px;
+
+@media (max-width: 900px) {
+  .product-item {
+    font-family: "Amatic SC", cursive;
+    margin-right: 20px;
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 900px) {
+  .product-item {
+    font-family: "Amatic SC", cursive;
+    margin-top: 15px;
+  }
 }
 
 .body-card{

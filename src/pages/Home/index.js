@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react'
-import { Divider, Row, Col } from 'antd'
+import { message, Row, Col } from 'antd'
 
 import Container from '../../components/Container'
 import Carousel from '../../components/Carousel'
@@ -64,6 +64,10 @@ const Home = () => {
     const find = produtcs.find(prod => prod.id === id)
 
     const findFlavor = find.flavors.find(fla => fla.active)
+    if(!findFlavor){
+       message.error('Escolha pelo menos 1 sabor para continuar');
+       return
+    }
     const text = `Olá, gostaria de comprar o *${find.name}* no sabor de *${findFlavor.flavor}*`;
 
     window.open(`https://api.whatsapp.com/send/?phone=5515997623307&text=${text}&app_absent=0`, '_blank');
