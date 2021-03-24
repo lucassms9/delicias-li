@@ -6,59 +6,11 @@ import Container from '../../components/Container'
 import Carousel from '../../components/Carousel'
 import Product from '../../components/Product'
 
+import products from './products';
 import './style.css';
 
 const Home = () => {
-    const [produtcs, setProdutcs] = useState([
-      {
-          id:1,
-          name: 'Cone Crocante',
-          image: 'http://sweet-dessert.axiomthemes.com/wp-content/uploads/revslider/slider-1/slider-1.jpg',
-          price: 10,
-          flavors:[
-            {
-              flavor:'Morango',
-              active:false
-            },
-            {
-              flavor:'Uva',
-              active:false
-            }
-          ]
-      },
-      {
-          id:2,
-          name: 'Cone Crocante 2',
-          image: 'http://sweet-dessert.axiomthemes.com/wp-content/uploads/revslider/slider-1/slide2-1.jpg',
-          price: 10,
-          flavors:[
-            {
-              flavor:'Morango',
-              active:false
-            },
-            {
-              flavor:'Uva',
-              active:false
-            }
-          ]
-      },
-      {
-          id:3,
-          name: 'Cone Crocante 3',
-          image: 'http://sweet-dessert.axiomthemes.com/wp-content/uploads/revslider/slider-1/slide4.jpg',
-          price: 10,
-          flavors:[
-            {
-              flavor:'Morango',
-              active:false
-            },
-            {
-              flavor:'Uva',
-              active:false
-            }
-          ]
-      },
-  ])
+    const [produtcs, setProdutcs] = useState(products);
 
   const buyItem = (id) => {
     const find = produtcs.find(prod => prod.id === id)
@@ -68,7 +20,8 @@ const Home = () => {
        message.error('Escolha pelo menos 1 sabor para continuar');
        return
     }
-    const text = `Olá, gostaria de comprar o *${find.name}* no sabor de *${findFlavor.flavor}*`;
+    const text = `Olá, gostaria de comprar o *${find.name}* no sabor de *${findFlavor.flavor}* no valor de *${find.price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}*`;
+
 
     window.open(`https://api.whatsapp.com/send/?phone=5515997623307&text=${text}&app_absent=0`, '_blank');
 
@@ -77,13 +30,18 @@ const Home = () => {
   const chooseFlavor = (id, flavor) => {
 
     const find = produtcs.find(prod => prod.id === id)
+    let newPrice = find.price;
+
     find.flavors.forEach(fla => {
       if(fla.flavor === flavor){
         fla.active = true
+        newPrice = fla.price;
       }else{
         fla.active = false
       }
-    })
+    });
+
+    find.price = newPrice;
     
     const handleItems = produtcs.filter(prod => prod.id !== id);
 

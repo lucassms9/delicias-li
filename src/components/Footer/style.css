@@ -30,8 +30,9 @@
 .divider {
     background: #fff;
     width: 1px;
-    height: 100px;
+    height: 69px;
     text-align: right;
+    margin-top: 20px;
 }
 .content-item {
     width: 100%;

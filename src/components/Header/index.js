@@ -13,7 +13,7 @@ const Header = () => {
 
                 </Col>
                 <Col className="cl-item" style={{justifyContent:'center'}} span={8}>
-                <img src="http://sweet-dessert.axiomthemes.com/wp-content/uploads/2016/10/logo-1.png" alt="logo"/>
+                <img width="100" src="/images/logo.jpeg" alt="logo"/>
                 </Col>
                 <Col className="cl-item" span={8}>
                   

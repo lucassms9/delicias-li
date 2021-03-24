@@ -47,7 +47,7 @@ const Mobile = () => {
                                 style={{
                                     marginLeft: 7,
                                     color: '#119af7',
-                                    fontSize: 20,
+                                    fontSize: 28,
                                 }}
                             />
                             <InstagramOutlined
@@ -55,7 +55,7 @@ const Mobile = () => {
                                 style={{
                                     marginLeft: 7,
                                     color: '#cf2c87',
-                                    fontSize: 20,
+                                    fontSize: 28,
                                 }}
                             />
                         </div>
@@ -70,7 +70,7 @@ const Mobile = () => {
                                     <WhatsAppOutlined
                                         style={{
                                             color: '#52c41a',
-                                            fontSize: 20,
+                                            fontSize: 28,
                                             marginTop: 5,
                                             paddingTop: 5,
                                         }}
@@ -109,7 +109,7 @@ const Web = () => {
                                 style={{
                                     marginLeft: 7,
                                     color: '#119af7',
-                                    fontSize: 20,
+                                    fontSize: 28,
                                 }}
                                 onClick={openFace}
                             />
@@ -118,7 +118,7 @@ const Web = () => {
                                 style={{
                                     marginLeft: 7,
                                     color: '#cf2c87',
-                                    fontSize: 20,
+                                    fontSize: 28,
                                 }}
                             />
                         </div>
@@ -134,7 +134,7 @@ const Web = () => {
                                     <WhatsAppOutlined
                                         style={{
                                             color: '#52c41a',
-                                            fontSize: 20,
+                                            fontSize: 28,
                                             marginTop: 5,
                                             paddingTop: 5,
                                         }}

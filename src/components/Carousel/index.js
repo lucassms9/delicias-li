@@ -34,35 +34,22 @@ const CarouselComp = () => {
                 }
               }}
         >
-            <div
-                onClick={() => fn()}
-                onKeyDown={() => fn()}
-                role="menuitem"
+            
+            <img
+                style={contentStyle}
+                src="/images/cestinha.jpeg"
+                alt="CESTINHA TRUFADA"
+            />
+            <img
+                style={contentStyle}
+                src="/images/cones.jpeg"
+                alt="CONE TRUFADO"
                 tabIndex="0"
-            >
-                <img
-                    src="http://sweet-dessert.axiomthemes.com/wp-content/uploads/revslider/slider-1/slide4.jpg"
-                    alt="title or description"
-                    style={{
-                        display: 'block',
-                        width: '100%',
-                    }}
-                />
-            </div>
-            <img
-                style={contentStyle}
-                src="http://sweet-dessert.axiomthemes.com/wp-content/uploads/revslider/slider-1/slide4.jpg"
-                alt="Doce 1"
             />
             <img
                 style={contentStyle}
-                src="http://sweet-dessert.axiomthemes.com/wp-content/uploads/revslider/slider-1/slide2-1.jpg"
-                alt="Doce 2"
-            />
-            <img
-                style={contentStyle}
-                src="http://sweet-dessert.axiomthemes.com/wp-content/uploads/revslider/slider-1/slider-1.jpg"
-                alt="Doce 3"
+                src="/images/copo.jpeg"
+                alt="COPO DA FELICIDADE"
             />
         </Coverflow>
     )
