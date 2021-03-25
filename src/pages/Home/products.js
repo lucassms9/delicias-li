@@ -182,7 +182,7 @@ const products = [
     },
     {
         id: 8,
-        name: 'Maça de Chocolate',
+        name: 'Maçã de Chocolate',
         image: '/images/maca.webp',
         price: 5,
         flavors: [],
