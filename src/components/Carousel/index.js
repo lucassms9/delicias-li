@@ -52,7 +52,7 @@ const CarouselComp = () => {
                 alt="COPO DA FELICIDADE"
             />
         </Coverflow>
-    )
+    );
 }
 
 export default CarouselComp

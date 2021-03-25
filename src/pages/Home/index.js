@@ -16,10 +16,21 @@ const Home = () => {
     const find = produtcs.find(prod => prod.id === id)
 
     const findFlavor = find.flavors.find(fla => fla.active)
-    if(!findFlavor){
+
+    if(!findFlavor && find.flavors.length > 0){
        message.error('Escolha pelo menos 1 sabor para continuar');
        return
     }
+    
+    if (find.flavors.length === 0) {
+
+      const text = `Olá, gostaria de comprar o *${find.name}* no valor de *${find.price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}*`;
+
+      window.open(`https://api.whatsapp.com/send/?phone=5515997623307&text=${text}&app_absent=0`, '_blank');
+
+      return;
+    }
+
     const text = `Olá, gostaria de comprar o *${find.name}* no sabor de *${findFlavor.flavor}* no valor de *${find.price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}*`;
 
 
